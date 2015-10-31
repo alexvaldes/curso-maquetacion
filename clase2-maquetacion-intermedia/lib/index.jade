@@ -4,50 +4,64 @@ html(lang="en")
 		meta(charset="UTF-8")
 		title Jorge Valdes
 		link(rel="stylesheet" type="text/css" href="css/estilos.css") 
+		link(rel="stylesheet" type="text/css" href="css/fonts.css")
 	body
-		p hola jade
-		section
-			header
-				figure
+		section.Perfil
+			header.Perfil-header
+				figure.Perfil-header-figure
 					img
-					figcaption Jorge Valdes
-					figcaption Front-end
-			article
+					div.Perfil-header-figure-figcaptions
+						figcaption Jorge Valdes
+						figcaption Front-end
+			article.Perfil-contacto
 				ul
-					a
-						li 
-							i
+					li.Perfil-contacto-tel 
+						a(href="tel:+528442559823")
+							i.icon-tel
 							span (844) 255 9823
-					a
-						li 
-							i
+					li.Perfil-contacto-email 
+						a(href="mailto:alexvaldes95@gmail.com")
+							i.icon-email
 							span alexvaldes95@gmail.com
-					a
-						li 
-							i
+					li.Perfil-contacto-contratar 
+						a(href="#")
+							i.icon-contratar
 							span Contratar
-			article
+			article.Perfil-redesSociales
 				ul
-					a
-						li 
-							i
-		section
-			article
-				div
-					h2 Desarrollo web
-					p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					li.Perfil-redesSociales-twt 
+						a(href="http://www.twitter.com" target="_blank")
+							i.icon-twitter
+							span @alexvaldes
+					li.Perfil-redesSociales-fb 
+						a(href="http://www.fb.com" target="_blank")
+							i.icon-fb
+							span @jorgevaldes_07
+					li.Perfil-redesSociales-git 
+						a(href="http://www.github.com" target="_blank")
+							i.icon-git
+							span @alexvaldes
+			//article#map.Perfil-mapa
+		section.Contenido
+			article.Contenido-skill
+				div.Contenido-skill-info
+					h2.Contenido-skill-info-title Desarrollo web
+					p.Contenido-skill-info-desc Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-			article
-				div
-					h2 Desarrollo de Apps moviles
-					p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					
 
+			article.Contenido-skill
+				div.Contenido-skill-info
+					h2.Contenido-skill-info-title Desarrollo de aplicaciones web
+					p.Contenido-skill-info-desc Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		script(src="https://maps.googleapis.com/maps/api/js")
+		script(src="./js/app.js")
