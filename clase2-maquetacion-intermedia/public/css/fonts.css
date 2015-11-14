@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'icomoon';
-	src:url('fonts/icomoon.eot?q51k74');
-	src:url('fonts/icomoon.eot?q51k74#iefix') format('embedded-opentype'),
-		url('fonts/icomoon.ttf?q51k74') format('truetype'),
-		url('fonts/icomoon.woff?q51k74') format('woff'),
-		url('fonts/icomoon.svg?q51k74#icomoon') format('svg');
+	src:url('fonts/icomoon.eot?habkl3');
+	src:url('fonts/icomoon.eot?habkl3#iefix') format('embedded-opentype'),
+		url('fonts/icomoon.ttf?habkl3') format('truetype'),
+		url('fonts/icomoon.woff?habkl3') format('woff'),
+		url('fonts/icomoon.svg?habkl3#icomoon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -23,20 +23,23 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
-.icon-git:before {
-	content: "\e905";
-}
-.icon-twitter:before {
+.icon-close:before {
 	content: "\e900";
 }
-.icon-fb:before {
+.icon-youtube:before {
+	content: "\e905";
+}
+.icon-git:before {
+	content: "\e906";
+}
+.icon-twitter:before {
 	content: "\e901";
 }
-.icon-email:before {
-	content: "\e902";
+.icon-fb:before {
+	content: "\fb";
 }
-.icon-contratar:before {
-	content: "\e903";
+.icon-email:before {
+	content: "\ea";
 }
 .icon-tel:before {
 	content: "\e904";

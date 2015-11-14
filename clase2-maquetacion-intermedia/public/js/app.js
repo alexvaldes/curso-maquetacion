@@ -11,20 +11,28 @@
 	// }
 
 	// tipo2();
-
-		var myLatlng = new google.maps.LatLng(-25.363882,131.044922);
+	var myLatlng = new google.maps.LatLng(25.433473, -100.996756);
 	var mapOptions = {
-	  zoom: 12,
+	  zoom: 16,
 	  center: myLatlng
 	}
 	var map = new google.maps.Map(document.getElementById("map"), mapOptions);
-
 	var marker = new google.maps.Marker({
 	    position: myLatlng,
 	    title:"Hello World!"
 	});
-
 	// To add the marker to the map, call setMap();
 	marker.setMap(map);
 
+	var btnPopup = document.getElementById('btnPopup');
+	var popup = document.getElementById('popup');
+	var closePopup = document.getElementById('closePopup');
+
+	btnPopup.addEventListener('click', onClickPopup);
+	closePopup.addEventListener('click', onClickPopup);
+
+	function onClickPopup(){
+		popup.classList.toggle('Popup--visible');
+	};
+	
 })();

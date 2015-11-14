@@ -1,0 +1,46 @@
+.Popup
+	background rgba(black, .6)
+	position fixed
+	top 0
+	right 0
+	bottom 0
+	left 0
+	display flex
+	//por default es el valor que toma
+	flex-direction row
+	//centrar horizonal en row y vertical en column
+	justify-content center
+	//centrar vertical en row y horizontal en column
+	align-items center
+	transition all 0.5s ease-in-out
+	max-height 0em
+	overflow hidden
+	&--visible
+			max-height 100em
+	&-container
+		display flex
+		position relative
+		.icon-close
+			position absolute
+			color white
+			bottom 100%
+			left 100%
+			padding .5em
+			font-size 1em
+			cursor pointer
+		&-map
+			width 20em
+			height 20em
+			background white
+		&-form
+			display flex
+			flex-direction column
+			justify-content space-between
+			margin-right 2em
+			& > *
+				border 0
+				border-radius 5px
+				padding .3em
+			textarea
+				height 13em
+				resize none

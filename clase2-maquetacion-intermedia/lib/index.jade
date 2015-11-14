@@ -2,10 +2,20 @@
 html(lang="en")
 	head
 		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1")
 		title Jorge Valdes
 		link(rel="stylesheet" type="text/css" href="css/estilos.css") 
 		link(rel="stylesheet" type="text/css" href="css/fonts.css")
 	body
+		section#popup.Popup
+			article.Popup-container
+				i#closePopup.icon-close
+				form.Popup-container-form
+					input(type="email" placeholder="example@dominio.com" required)
+					input(type="text" placeholder="Tu nombre aqui" required)
+					textarea(placeholder="Escriba su mensaje" required)
+					button(type="submit") Enviar
+				div#map.Popup-container-map
 		section.Perfil
 			header.Perfil-header
 				figure.Perfil-header-figure
@@ -23,7 +33,7 @@ html(lang="en")
 						a(href="mailto:alexvaldes95@gmail.com")
 							i.icon-email
 							span alexvaldes95@gmail.com
-					li.Perfil-contacto-contratar 
+					li#btnPopup.Perfil-contacto-contratar 
 						a(href="#")
 							i.icon-contratar
 							span Contratar
@@ -45,59 +55,10 @@ html(lang="en")
 		section.Contenido
 			article.Contenido-skill
 				div.Contenido-skill-info
-					h2.Contenido-skill-info-title Desarrollo web
-					p.Contenido-skill-info-desc Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-					
+					div
+						h2.Contenido-skill-info-title Desarrollo de aplicaciones web
+						p.Contenido-skill-info-desc Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 
-			article.Contenido-skill
-				div.Contenido-skill-info
-					h2.Contenido-skill-info-title Desarrollo de aplicaciones web
-					p.Contenido-skill-info-desc Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-			article.Contenido-skill
-				div.Contenido-skill-info
-					h2.Contenido-skill-info-title Desarrollo de aplicaciones web
-					p.Contenido-skill-info-desc Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-			article.Contenido-skill
-				div.Contenido-skill-info
-					h2.Contenido-skill-info-title Desarrollo de aplicaciones web
-					p.Contenido-skill-info-desc Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-			article.Contenido-skill
-				div.Contenido-skill-info
-					h2.Contenido-skill-info-title Desarrollo de aplicaciones web
-					p.Contenido-skill-info-desc Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-			article.Contenido-skill
-				div.Contenido-skill-info
-					h2.Contenido-skill-info-title Desarrollo de aplicaciones web
-					p.Contenido-skill-info-desc Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 		script(src="https://maps.googleapis.com/maps/api/js")
 		script(src="./js/app.js")
